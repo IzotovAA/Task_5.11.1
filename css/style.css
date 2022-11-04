@@ -1,6 +1,8 @@
 body {
   margin: 0px;
   padding: 0px;
+  background: url(/images/news_background.jpg);
+  background-size: cover;
 }
 
 header {
@@ -8,26 +10,44 @@ header {
   align-items: center;
   justify-content: center;
   height: 400px;
-  background: url(/images/header.jpg);
+  background: url(/images/header.jpg) bottom;
   background-size: cover;
+  border-bottom: rgb(10, 100, 10) solid 10px;
 }
 
-h1 {
-  color: aliceblue;
-  font-size: 4rem;
+header a {
+  text-decoration: none;
+  color: rgb(110, 210, 180);
+  font-size: 2rem;
   font-family: "Times New Roman", Times, serif;
 }
 
+header a:hover {
+  color: #0085a1;
+}
+
+/* h1 { */
+/* color: aliceblue; */
+/* color: rgb(110, 210, 180); */
+/* font-size: 4rem; */
+/* font-family: "Times New Roman", Times, serif; */
+/* } */
+
 .news {
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 50px 0 32px;
+  /* background: url(/images/news_background.jpg); */
+  /* background-size: cover; */
+  background-color: initial;
 }
 
 article {
   width: 768px;
   margin: 0 auto 32px;
   padding: 6px 15px;
-  border-bottom: 1px solid rgb(128, 128, 128);
+  /* border-bottom: 1px solid rgb(128, 128, 128); */
+  border-radius: 20px;
+  background-color: rgb(110, 210, 180);
 }
 
 article a {
@@ -45,7 +65,7 @@ article h2 {
 }
 
 .article-meta {
-  color: rgb(134, 142, 150);
+  color: rgb(110, 120, 120);
   margin-bottom: 5px;
 }
 
@@ -73,9 +93,20 @@ footer .links > a {
   letter-spacing: 0.1rem;
   text-decoration: none;
   text-transform: uppercase;
+  background-color: rgb(110, 210, 180);
+  border-radius: 5px;
 }
 
-.copyrigh {
+footer .links > a:hover {
+  color: #0085a1;
+}
+
+.copyright {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0px 25px;
   color: rgb(108, 117, 125);
   font-family: "Times New Roman", Times, serif;
+  background: rgb(110, 210, 180);
+  border-radius: 5px;
 }
