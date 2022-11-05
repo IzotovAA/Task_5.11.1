@@ -1,7 +1,7 @@
 body {
   margin: 0px;
   padding: 0px;
-  background: url(/images/body.jpg) top no-repeat;
+  background: url(body.jpg) top;
   background-size: cover;
 }
 
@@ -10,7 +10,7 @@ header {
   align-items: center;
   justify-content: center;
   height: 400px;
-  background: url(/images/header.jpg) bottom;
+  background: url(header.jpg) bottom;
   background-size: cover;
   border-bottom: rgb(10, 100, 10) solid 10px;
 }
@@ -26,18 +26,8 @@ header a:hover {
   color: #0085a1;
 }
 
-/* h1 { */
-/* color: aliceblue; */
-/* color: rgb(110, 210, 180); */
-/* font-size: 4rem; */
-/* font-family: "Times New Roman", Times, serif; */
-/* } */
-
 .news {
-  /* background-color: #fff; */
   padding: 50px 0 32px;
-  /* background: url(/images/news_background.jpg); */
-  /* background-size: cover; */
   background-color: initial;
 }
 
@@ -62,9 +52,12 @@ article {
   width: 768px;
   margin: 0 auto 32px;
   padding: 6px 15px;
-  /* border-bottom: 1px solid rgb(128, 128, 128); */
   border-radius: 20px;
-  background-color: rgb(110, 210, 180);
+  background-color: rgb(190, 240, 220);
+}
+
+article:nth-child(even) {
+  background-color: rgb(180, 200, 230);
 }
 
 article a {
@@ -81,14 +74,20 @@ article h2 {
   margin-bottom: 5px;
 }
 
+.new h2::before {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  content: "New";
+  color: red;
+  margin-right: 10px;
+}
+
 .article-meta {
   color: rgb(110, 120, 120);
   margin-bottom: 5px;
 }
 
 article img {
-  height: 300px;
-  /* object-fit: cover; */
+  height: 400px;
   display: block;
   margin: 0 auto;
 }
